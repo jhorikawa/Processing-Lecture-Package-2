@@ -1,0 +1,14 @@
+﻿Option Explicit
+'Script written by <insert name>
+'Script copyrighted by <insert company name>
+'Script version Wednesday, November 16, 2011 12:14:42 PM
+
+Call Main()
+Sub Main()
+	Dim i
+	Rhino.EnableRedraw(False)
+	For i = 0 To 200
+		Rhino.AddPoint(Array(RND*500,RND*500,RND*500))
+	Next
+	Rhino.EnableRedraw(True)
+End Sub
